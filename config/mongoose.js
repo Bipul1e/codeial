@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://kumarbipuldh:bipul54321@cluster0.kyrydl1.mongodb.net/');
+mongoose.connect('mongodb://127.0.0.1:27017/codeial');
 const db=mongoose.connection;
 db.on('error',console.error.bind(console, 'error connecting to db'));
 db.once('open',function(){
